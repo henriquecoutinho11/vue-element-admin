@@ -2,12 +2,14 @@
   <img width="320" src="https://wpimg.wallstcn.com/ecc53a42-d79b-42e2-8852-5126b810a4c8.svg">
 </p>
 
+<h1 align="center">vue-element-admin</h1>
+
 <p align="center">
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="Vue 2.6.10">
   </a>
   <a href="https://github.com/ElemeFE/element">
-    <img src="https://img.shields.io/badge/element--ui-2.7.0-brightgreen.svg" alt="element-ui">
+    <img src="https://img.shields.io/badge/element--ui-2.13.2-brightgreen.svg" alt="Element UI 2.13.2">
   </a>
   <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
     <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
@@ -40,20 +42,18 @@ English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spa
         </a>
       </td>
     </tr>
-  </tbody> 
+  </tbody>
 </table>-->
 
 ## Introduction
 
-[vue-element-admin](https://panjiachen.github.io/vue-element-admin) is a production-ready front-end solution for admin interfaces. It is based on [vue](https://github.com/vuejs/vue) and uses the UI Toolkit [element-ui](https://github.com/ElemeFE/element).
-
-[vue-element-admin](https://panjiachen.github.io/vue-element-admin) is based on the newest development stack of vue and it has a built-in i18n solution, typical templates for enterprise applications, and lots of awesome features. It helps you build large and complex Single-Page Applications. I believe whatever your needs are, this project will help you.
+[vue-element-admin](https://panjiachen.github.io/vue-element-admin) is a production-ready admin interface built with [Vue 2](https://github.com/vuejs/vue) and [Element UI](https://github.com/ElemeFE/element). It includes reusable enterprise application templates and features for building large single-page applications.
 
 - [Preview](https://panjiachen.github.io/vue-element-admin)
 
 - [Documentation](https://panjiachen.github.io/vue-element-admin-site/)
 
-- [Gitter](https://gitter.im/vue-element-admin/discuss)
+- [Gitter](https://gitter.im/vue-element-admin/discuss) (community chat)
 
 - [Donate](https://panjiachen.github.io/vue-element-admin-site/donate/)
 
@@ -66,16 +66,15 @@ English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Spa
 - Typescript: [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
 - [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
 
-**After the `v4.1.0+` version, the default master branch will not support i18n. Please use [i18n Branch](https://github.com/PanJiaChen/vue-element-admin/tree/i18n), it will keep up with the master update**
+**The default branch does not include the optional i18n setup. For that setup, use the [i18n branch](https://github.com/PanJiaChen/vue-element-admin/tree/i18n).**
 
-**The current version is `v4.0+` build on `vue-cli`. If you find a problem, please put [issue](https://github.com/PanJiaChen/vue-element-admin/issues/new). If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-element-admin/tree/tag/3.11.0), it does not rely on `vue-cli`**
+**This repository uses Vue CLI and is currently version `4.4.0`. If you find a problem, please [open an issue](https://github.com/PanJiaChen/vue-element-admin/issues/new).**
 
 **This project does not support low version browsers (e.g. IE). Please add polyfill by yourself.**
 
 ## Preparation
 
-You need to install [node](https://nodejs.org/) and [git](https://git-scm.com/) locally. The project is based on [ES2015+](https://es6.ruanyifeng.com/), [vue](https://cn.vuejs.org/index.html), [vuex](https://vuex.vuejs.org/zh-cn/), [vue-router](https://router.vuejs.org/zh-cn/), [vue-cli](https://github.com/vuejs/vue-cli) , [axios](https://github.com/axios/axios) and [element-ui](https://github.com/ElemeFE/element), all request data is simulated using [Mock.js](https://github.com/nuysoft/Mock).
-Understanding and learning this knowledge in advance will greatly help the use of this project.
+You need [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed locally. The project uses Vue CLI, Vuex, Vue Router, Axios, Element UI, and [Mock.js](https://github.com/nuysoft/Mock) to simulate API responses during development.
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/PanJiaChen/vue-element-admin/tree/CodeSandbox)
 
@@ -88,7 +87,9 @@ Understanding and learning this knowledge in advance will greatly help the use o
 Become a sponsor and get your logo on our README on GitHub with a link to your site. [[Become a sponsor]](https://www.patreon.com/panjiachen)
 
 ### Akveo
+
 <a href="https://store.akveo.com/products/vue-java-admin-dashboard-spring?utm_campaign=akveo_store-Vue-Vue_demo%2Fgithub&utm_source=vue_admin&utm_medium=referral&utm_content=github_banner"><img width="500px" src="https://raw.githubusercontent.com/PanJiaChen/vue-element-admin-site/master/docs/.vuepress/public/images/vue-java-banner.png" /></a><p>Get Java backend for Vue admin with 20% discount for 39$ use coupon code SWB0RAZPZR1M
+
 </p>
 
 ### Flatlogic
@@ -164,7 +165,7 @@ Become a sponsor and get your logo on our README on GitHub with a link to your s
 - Markdown to html
 ```
 
-## Getting started
+## Getting Started
 
 ```bash
 # clone the project
@@ -173,16 +174,16 @@ git clone https://github.com/PanJiaChen/vue-element-admin.git
 # enter the project directory
 cd vue-element-admin
 
-# install dependency
+# install dependencies
 npm install
 
 # develop
 npm run dev
 ```
 
-This will automatically open http://localhost:9527
+The development server opens automatically at http://localhost:9527.
 
-## Build
+## Build for Production
 
 ```bash
 # build for test environment
@@ -192,20 +193,23 @@ npm run build:stage
 npm run build:prod
 ```
 
-## Advanced
+## Other Commands
 
 ```bash
-# preview the release environment effect
+# preview the production build
 npm run preview
 
-# preview the release environment effect + static resource analysis
+# preview the production build with a bundle report
 npm run preview -- --report
 
-# code format check
+# lint the source code
 npm run lint
 
-# code format check and auto fix
+# lint and fix automatically
 npm run lint -- --fix
+
+# run unit tests
+npm run test:unit
 ```
 
 Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
@@ -228,13 +232,9 @@ If you find this project useful, you can buy author a glass of juice :tropical_d
 
 [Buy me a coffee](https://www.buymeacoffee.com/Pan)
 
-## Browsers support
+## Browser Support
 
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge | last 2 versions | last 2 versions | last 2 versions |
+The project targets modern browsers supported by the configured [browserslist](https://github.com/browserslist/browserslist). Internet Explorer is not supported. Add the required polyfills yourself if you need to support an older browser.
 
 ## License
 
